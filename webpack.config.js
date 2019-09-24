@@ -5,7 +5,7 @@ module.exports = {
     entry: ['@babel/polyfill', './src/js/index.js'],
     devtool: 'source-map',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: 'js/bundle.js'
     },
     plugins: [
@@ -15,7 +15,7 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: './dist'
+        contentBase: './docs'
     },
     module: {
         rules: [
